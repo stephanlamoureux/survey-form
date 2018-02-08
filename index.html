@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Survey Form Project - for the freeCodeCamp Responsive Design Certificate.">
+  <title>Join The Empire - freeCodeCamp Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/staging/public/favicon.ico">
+  <!-- Free Code Camp Test Suite -->
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</head>
+
+<body>
+  <main>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/61VNvBoBlOL._SL1001_.jpg" alt="Vader wants you for the empire" </img>
+    <h1 id="title" class="title">Enlist In The Empire Today!</h1>
+    <form class="survey-form" action="" id="survey-form">
+      <p id="description" class="form-title">Please fill out the from below to receive more information about the Galactic Empire.</p>
+      <label for="name" class="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your full name" required>
+
+      <label for="email" class="email" id="email-label">E-Mail Address</label>
+      <input id="email" type="email" placeholder="Enter your primary email address" required>
+
+      <label for="number" class="age" id="number-label">Age</label>
+      <input id="number" type="number" min="1" max="1000" placeholder="100" required>
+
+      <label for="dropdown" class="species" id="dropdown-label">Species</label>
+      <select id="dropdown" name="dropdown">
+        <option>Human</option>
+        <option>Rodian</option>
+        <option>Zabraks</option>
+        <option>Twi’leks</option>
+        <option>Other</option>
+      </select>
+
+      <fieldset>
+        <legend>Lightsaber Color</legend>
+        <input type="radio" id="radio" name="radio" value="saber-color">
+        <label for="radio" class="saber-color" id="radio-option1">Red</label>
+
+        <input type="radio" id="radio" name="radio" value="saber-color">
+        <label for="radio" class="saber-color" id="radio-option2">Red</label>
+
+        <input type="radio" id="radio" name="radio" value="saber-color">
+        <label for="radio" class="saber-color" id="radio-option3">Red</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How Dark Are You</legend>
+        <input type="checkbox" id="checkbox" name="checkbox" value="dark">
+        <label for="checkbox" class="" id="check-option1">Dark</label>
+
+        <input type="checkbox" id="checkbox" name="checkbox" value="mostly-dark">
+        <label for="checkbox" class="" id="check-option1">Mostly Dark</label>
+
+        <input type="checkbox" id="checkbox" name="checkbox" value="kinda-dark">
+        <label for="checkbox" class="" id="check-option1">Kinda Dark</label>
+      </fieldset>
+
+      <label for="textarea" id="textarea-label">Comments</label>
+      <textarea id="textarea" rows="10" placeholder="Comments, questions concerns..."></textarea>
+
+      <button id="submit">SUBMIT</button>
+    </form>
+
+  </main>
+</body>
+
+</html>

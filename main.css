@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+  font-family: sans;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 1.7em;
+  margin: 0;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 900px;
+  display: block;
+}
+
+p {
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+}
+
+form {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 5px solid grey;
+  margin: 2em auto 0 auto;
+  max-width: 700px;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form button {
+  background: grey;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+  color: white;
+}
+
+form button:hover {
+  outline: 1px solid black;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+input, select {
+  padding: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 1px solid black;
+}
+
+label {
+  text-align: right;
+  grid-column: 1 / 2;
+}
+
+input, button, fieldset, select, textarea {
+  grid-column: 2 / 3;
+}
+
+textarea {
+  padding: 0.5em 0.5em 0 0.5em;
+  margin: 0.7em;
+}
+
+.form-title {
+  text-algin: center;
+  color: black;
+  grid-column: 1 / 3;
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  img {
+    max-width: 400px;
+  }
+  @media only screen and (max-width: 375px) {
+    img {
+      max-width: 300px;
+    }
+    @media only screen and (min-width: 400px) {
+      form {
+        grid-template-columns: 200px 1fr;
+        grid-gap: 16px;
+      }
+    }
