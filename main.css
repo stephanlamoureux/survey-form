@@ -32,6 +32,7 @@ form {
   max-width: 700px;
   padding: 1em;
   border-radius: 4px;
+  text-align: center;
 }
 
 form input {
@@ -49,6 +50,7 @@ form button {
 
 form button:hover {
   outline: 1px solid black;
+  color: black;
 }
 
 label {
