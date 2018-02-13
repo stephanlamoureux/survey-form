@@ -16,9 +16,11 @@
 <body>
 
   <main>
-    <img src="https://images-na.ssl-images-amazon.com/images/I/61VNvBoBlOL._SL1001_.jpg" alt="Vader wants you for the empire" </img>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/61VNvBoBlOL._SL1001_.jpg" alt="Vader wants you for the empire">
     <h1 id="title" class="title">Enlist In The Empire Today!</h1>
-    <form class="survey-form" action="" id="survey-form">
+
+    <form class="survey-form" action="submit" method="get" id="survey-form">
+
       <p id="description" class="form-title">Please fill out the from below to receive more information about the Galactic Empire.</p>
       <label for="name" class="name" id="name-label">Name:</label>
       <input id="name" type="text" placeholder="Enter your full name" required>
@@ -40,26 +42,26 @@
 
       <fieldset>
         <legend>Lightsaber Color</legend>
-        <input type="radio" id="radio" name="radio" value="saber-color">
-        <label for="radio" class="saber-color" id="radio-option1">Red</label>
+        <input type="radio" id="radio1" name="radio" value="saber-color">
+        <label for="radio1" class="saber-color" id="radio-option1">Red</label>
 
-        <input type="radio" id="radio" name="radio" value="saber-color">
-        <label for="radio" class="saber-color" id="radio-option2">Red</label>
+        <input type="radio" id="radio2" name="radio" value="saber-color">
+        <label for="radio2" class="saber-color" id="radio-option2">Red</label>
 
-        <input type="radio" id="radio" name="radio" value="saber-color">
-        <label for="radio" class="saber-color" id="radio-option3">Red</label>
+        <input type="radio" id="radio3" name="radio" value="saber-color">
+        <label for="radio3" class="saber-color" id="radio-option3">Red</label>
       </fieldset>
 
       <fieldset>
         <legend>How Dark Are You</legend>
-        <input type="checkbox" id="checkbox" name="checkbox" value="dark">
-        <label for="checkbox" class="" id="check-option1">Dark</label>
+        <input type="checkbox" id="checkbox1" name="checkbox" value="dark">
+        <label for="checkbox1" class="" id="check-option1">Dark</label>
 
-        <input type="checkbox" id="checkbox" name="checkbox" value="mostly-dark">
-        <label for="checkbox" class="" id="check-option1">Mostly Dark</label>
+        <input type="checkbox" id="checkbox2" name="checkbox" value="mostly-dark">
+        <label for="checkbox2" class="" id="check-option2">Mostly Dark</label>
 
-        <input type="checkbox" id="checkbox" name="checkbox" value="kinda-dark">
-        <label for="checkbox" class="" id="check-option1">Kinda Dark</label>
+        <input type="checkbox" id="checkbox3" name="checkbox" value="kinda-dark">
+        <label for="checkbox3" class="" id="check-option3">Kinda Dark</label>
       </fieldset>
 
       <label for="textarea" id="textarea-label">Comments:</label>
