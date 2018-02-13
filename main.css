@@ -136,10 +136,3 @@ textarea {
     max-width: 400px;
   }
 }
-
-@media only screen and (min-width: 400px) {
-  form {
-    grid-template-columns: 200px 1fr;
-    grid-gap: 16px;
-  }
-}
