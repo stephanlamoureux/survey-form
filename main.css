@@ -1,6 +1,7 @@
 /*                    TODO
 - Works well on tablets and up, fix for mobile responsiveness.
 - Clean up this mess of CSS code
+- Center fieldsets and push form to the left a little
 */
 
 body {
@@ -59,6 +60,7 @@ form select {
 
 form fieldset {
   margin: 0.5em 1.2em 0.5em 0;
+  padding: 0.5em 0 1em 0;
 }
 
 form textarea {
@@ -69,10 +71,11 @@ form textarea {
 form button {
   background: #545454;
   font-size: 1em;
-  padding: 0.7em;
+  padding: 0.8em;
   width: 96.5%;
   border: 0;
   color: white;
+  margin: 0.7em 0 0.7em 0;
 }
 
 form button:hover {
@@ -89,10 +92,6 @@ label {
 
 fieldset label {
   padding: 0;
-}
-
-fieldset {
-  margin: 10px 0 10px 0;
 }
 
 input, select {
