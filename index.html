@@ -17,18 +17,18 @@
 
   <main>
     <img src="Images/vader.jpg" alt="Vader wants you for the empire">
-    <form class="survey-form" action="submit" method="get" id="survey-form">
+    <form action="submit" method="get" id="survey-form">
       <p id="description" class="form-title">Please fill out the from below to receive more information about the Galactic Empire.</p>
-      <label for="name" class="name" id="name-label">Name:</label>
+      <label for="name" id="name-label">*Name:</label>
       <input id="name" type="text" placeholder="Enter your full name" required>
 
-      <label for="email" class="email" id="email-label">E-Mail Address:</label>
+      <label for="email" id="email-label">*E-Mail Address:</label>
       <input id="email" type="email" placeholder="Enter your primary email address" required>
 
-      <label for="number" class="age" id="number-label">Age:</label>
+      <label for="number" id="number-label">*Age:</label>
       <input id="number" type="number" min="1" max="1000" placeholder="100" required>
 
-      <label for="dropdown" class="species" id="dropdown-label">Species:</label>
+      <label for="dropdown" id="dropdown-label">Species:</label>
       <select id="dropdown" name="dropdown">
         <option>Human</option>
         <option>Rodian</option>
@@ -40,13 +40,13 @@
       <fieldset>
         <legend>Lightsaber Color</legend>
         <input type="radio" id="radio1" name="radio" value="saber-color">
-        <label for="radio1" class="saber-color" id="radio-option1">Red</label>
+        <label for="radio1" id="radio-option1">Red</label>
 
         <input type="radio" id="radio2" name="radio" value="saber-color">
-        <label for="radio2" class="saber-color" id="radio-option2">Red</label>
+        <label for="radio2" id="radio-option2">Red</label>
 
         <input type="radio" id="radio3" name="radio" value="saber-color">
-        <label for="radio3" class="saber-color" id="radio-option3">Red</label>
+        <label for="radio3" id="radio-option3">Red</label>
       </fieldset>
 
       <fieldset>
@@ -62,11 +62,13 @@
       </fieldset>
 
       <label for="textarea" id="textarea-label">Comments:</label>
-      <textarea id="textarea" rows="10" placeholder="Comments, questions concerns..."></textarea>
+      <textarea id="textarea" rows="10" cols="20" placeholder="Comments, questions concerns..."></textarea>
 
       <button id="submit">Submit</button>
     </form>
+
   </main>
+
   <footer>
     <h1 id="title" class="footer-h1"><a class="footer-link" href="http://starwars.wikia.com/wiki/Galactic_Empire" target="_blank">Learn More About Our Cause</a></h1>
   </footer>

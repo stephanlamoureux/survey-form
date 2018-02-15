@@ -35,7 +35,6 @@ form {
   border: 5px solid grey;
   margin: 1em auto 0 auto;
   max-width: 700px;
-  padding: 1em;
   border-radius: 4px;
   text-align: center;
 }
@@ -122,7 +121,7 @@ textarea {
 
 .footer-h1 {
   font-size: 0.9em;
-  padding-top: 45px;
+  padding-top: 40px;
   color: #ffb8b8;
 }
 
