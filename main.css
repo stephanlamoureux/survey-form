@@ -33,7 +33,7 @@ form {
   padding: 1em;
   background: #f9f9f9;
   border: 5px solid grey;
-  margin: 2em auto 0 auto;
+  margin: 1em auto 0 auto;
   max-width: 700px;
   padding: 1em;
   border-radius: 4px;
@@ -47,11 +47,11 @@ form input {
 }
 
 form input[type="radio"] {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 form input[type="checkbox"] {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 form select {
@@ -59,7 +59,7 @@ form select {
 }
 
 form fieldset {
-  margin: .5em 1.2em .5em 0;
+  margin: 0.5em 1.2em 0.5em 0;
 }
 
 form textarea {
@@ -68,7 +68,8 @@ form textarea {
 }
 
 form button {
-  background: grey;
+  background: #545454;
+  font-size: 1em;
   padding: 0.7em;
   width: 96.5%;
   border: 0;
@@ -76,8 +77,8 @@ form button {
 }
 
 form button:hover {
-  outline: 1px solid black;
-  color: black;
+  outline: 2px solid #ffb8b8;
+  color: #ffb8b8;
 }
 
 label {
@@ -117,6 +118,21 @@ textarea {
   text-align: center;
   color: black;
   grid-column: 1 / 3;
+}
+
+.footer-h1 {
+  font-size: 0.9em;
+  padding-top: 45px;
+  color: #ffb8b8;
+}
+
+.footer-link:link, .footer-link:active, .footer-link:visited {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.footer-link:hover {
+  color: #ff6161;
 }
 
 @media only screen and (max-width: 768px) {
