@@ -10,7 +10,7 @@ You can build your project by forking this CodePen pen. Or you can use this CDN 
 - Remember to use the Read-Search-Ask method if you get stuck.
 
 # Technology Stack
- 1. same as Tribute Page.
+ 1. Same as Tribute Page.
  
 # Content
 1. I can see a title with id="title" in H1 sized text.
