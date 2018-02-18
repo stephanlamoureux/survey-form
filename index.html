@@ -8,19 +8,22 @@
   <meta name="description" content="Survey Form Project - for the freeCodeCamp Responsive Design Certificate.">
   <title>Join The Empire - freeCodeCamp Survey Form</title>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="icon" type="image/png" href="Images/favicon.ico">
+  <link rel="icon" type="image/png" href="Images/favicon.ico"> !-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
   <main>
-    <img src="Images/vader.jpg" alt="Vader wants you for the empire">
+    <img src="Images/vader.jpg" alt="Vader wants YOU for The Empire">
+
     <form action="submit" method="get" id="survey-form">
+      <div class="form-icon-div"><a href="http://starwars.wikia.com/wiki/Galactic_Empire" title="Galactic Empire Wiki" class="empire-wiki" target="_blank"><i class="fa fa-empire fa-5x form-icon" aria-hidden="true"></i></a></div>
       <p id="description" class="form-title">Please fill out the from below to receive more information about the Galactic Empire.</p>
+
       <label for="name" id="name-label">*Name:</label>
       <input id="name" type="text" placeholder="Enter your full name" required>
 
-      <label for="email" id="email-label">*E-Mail Address:</label>
+      <label for="email" id="email-label">*E-Mail:</label>
       <input id="email" type="email" placeholder="Enter your primary email address" required>
 
       <label for="number" id="number-label">*Age:</label>
@@ -35,40 +38,46 @@
         <option>Other</option>
       </select>
 
-      <fieldset>
-        <legend>Lightsaber Color</legend>
-        <input type="radio" id="radio1" name="radio" value="saber-color">
-        <label for="radio1" id="radio-option1">Red</label>
+      <fieldset class="lightsaber">
+        <legend class="radio-legend">Lightsaber Color</legend>
+        <input type="radio" id="radio1" class="radio" name="radio" value="saber-color">
+        <label for="radio1" id="radio-option1" class="radio-label">Red</label>
 
-        <input type="radio" id="radio2" name="radio" value="saber-color">
-        <label for="radio2" id="radio-option2">Red</label>
+        <input type="radio" id="radio2" class="radio" name="radio" value="saber-color">
+        <label for="radio2" id="radio-option2" class="radio-label">Red</label>
 
-        <input type="radio" id="radio3" name="radio" value="saber-color">
-        <label for="radio3" id="radio-option3">Red</label>
+        <input type="radio" id="radio3" class="radio" name="radio" value="saber-color">
+        <label for="radio3" id="radio-option3" class="radio-label">Red</label>
       </fieldset>
 
-      <fieldset>
-        <legend>How Dark Are You</legend>
-        <input type="checkbox" id="checkbox1" name="checkbox" value="dark">
-        <label for="checkbox1" class="" id="check-option1">Dark</label>
+      <fieldset class="dark">
+        <legend class="checkbox-legend">How Dark Are You</legend>
+        <input type="checkbox" id="checkbox1" name="checkbox" value="dark" class="checkbox">
+        <label for="checkbox1" class="checkbox-label" id="check-option1">Dark</label>
 
-        <input type="checkbox" id="checkbox2" name="checkbox" value="mostly-dark">
-        <label for="checkbox2" class="" id="check-option2">Mostly Dark</label>
+        <input type="checkbox" id="checkbox2" name="checkbox" value="mostly-dark" class="checkbox">
+        <label for="checkbox2" class="checkbox-label" id="check-option2">Mostly Dark</label>
 
-        <input type="checkbox" id="checkbox3" name="checkbox" value="kinda-dark">
-        <label for="checkbox3" class="" id="check-option3">Kinda Dark</label>
+        <input type="checkbox" id="checkbox3" name="checkbox" value="kinda-dark" class="checkbox">
+        <label for="checkbox3" class="checkbox-label" id="check-option3">Kinda Dark</label>
       </fieldset>
 
       <label for="textarea" id="textarea-label">Comments:</label>
-      <textarea id="textarea" rows="10" cols="20" placeholder="Comments, questions concerns..."></textarea>
+      <textarea id="textarea" rows="10" cols="20" placeholder="Comments, questions, concerns..."></textarea>
 
       <button id="submit">Submit</button>
     </form>
-
   </main>
-
   <footer>
-    <h1 id="title" class="footer-h1"><a class="footer-link" href="http://starwars.wikia.com/wiki/Galactic_Empire" target="_blank">Learn More About Our Cause</a></h1>
+    <h1 id="title" class="footer-h1">Coded by Stephan Lamoureux</h1>
+    <div class="my-links">
+      <a href="https://github.com/slamoureux/survey-form" target="_blank" class="footer-link">
+      <i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href="https://codepen.io/s-lamoureux/pen/zpMqNM" target="_blank" class="footer-link">
+      <i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/sa_lamoureux" target="_blank" class="footer-link">
+      <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    </div>
   </footer>
 </body>
 

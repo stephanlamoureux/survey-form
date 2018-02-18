@@ -1,13 +1,12 @@
 /*                    TODO
-- Works well on tablets and up, fix for mobile responsiveness.
-- Clean up this mess of CSS code
-- Center fieldsets and push form to the left a little
+- Fix for mobile responsiveness.
+- Clean up CSS
 */
 
 body {
   background-color: black;
   font-family: sans;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -31,56 +30,103 @@ p {
 
 form {
   display: grid;
-  padding: 1em;
-  background: #f9f9f9;
-  border: 5px solid grey;
-  margin: 1em auto 0 auto;
+  grid-template-columns: 1fr 3fr;
+  padding: 1em 1em 1.5em 1em;
+  background: #f0f0f0;
+  border: 5px solid #757575;
+  margin: 0 auto 0 auto;
   max-width: 700px;
   border-radius: 4px;
   text-align: center;
 }
 
 form input {
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #9c9c9c;
-  margin-right: 1.5em;
+  margin-right: 2em;
 }
 
-form input[type="radio"] {
-  margin: 0.5em;
+.form-icon {
+  grid-column: 1 / 3;
+  color: black;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5px;
 }
 
-form input[type="checkbox"] {
-  margin: 0.5em;
+.form-icon-div {
+  grid-column: 1 / 3;
+}
+
+.empire-wiki {
+  text-decoration: none;
+}
+
+.radio {
+  margin: 0 5px 0 0;
+}
+
+.radio-label {
+  font-size: 1.1em;
+}
+
+.checkbox {
+  margin: 0 5px 0 0;
+}
+
+.checkbox-label {
+  font-size: 1.1em;
+}
+
+.radio-legend {
+  text-align: left;
+}
+
+.checkbox-legend {
+  text-align: left;
+}
+
+.lightsaber {
+  margin: 0 1.6em 0.5em 0;
+  padding: 1.5em 1em 1.5em 1em;
+  background: white;
+}
+
+.dark {
+  margin: 0 1.6em 0.5em 0;
+  padding: 1.5em 1em 1.5em 1em;
+  background: #ffffff;
 }
 
 form select {
-  margin-right: 1.5em;
+  margin-right: 2em;
 }
 
 form fieldset {
-  margin: 0.5em 1.2em 0.5em 0;
-  padding: 0.5em 0 1em 0;
+  margin: 0 auto;
+  text-align: right;
 }
 
 form textarea {
-  margin-right: 1.5em;
+  margin-right: 2em;
   margin-left: 0;
 }
 
 form button {
-  background: #545454;
+  grid-column: 1/ 3;
+  background: black;
   font-size: 1em;
-  padding: 0.8em;
-  width: 96.5%;
+  padding: 1em;
+  width: 100%;
+  margin: 0 auto;
   border: 0;
   color: white;
-  margin: 0.7em 0 0.7em 0;
 }
 
 form button:hover {
-  outline: 2px solid #ffb8b8;
-  color: #ffb8b8;
+  outline: 1px solid #ff3333;
+  color: #ff3333;
 }
 
 label {
@@ -109,19 +155,34 @@ input, button, fieldset, select, textarea {
 
 textarea {
   padding: 0.5em 0.5em 0 0.5em;
-  margin: 0.7em;
+  margin: 0.7em 0.7em 1.5em 0.7em;
+  background: #ffffff;
+  width: 92.15%;
 }
 
 .form-title {
   text-align: center;
-  color: black;
+  color: white;
   grid-column: 1 / 3;
+  background: black;
+  padding: 1em;
+  margin-bottom: 25px;
+  font-size: 15px;
 }
 
 .footer-h1 {
-  font-size: 0.9em;
-  padding-top: 40px;
-  color: #ffb8b8;
+  font-size: 1em;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.my-links {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.footer-link {
+  padding: 0 15px 0 15px;
 }
 
 .footer-link:link, .footer-link:active, .footer-link:visited {
@@ -130,7 +191,7 @@ textarea {
 }
 
 .footer-link:hover {
-  color: #ff6161;
+  color: #ff3333;
 }
 
 @media only screen and (max-width: 768px) {
