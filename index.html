@@ -14,22 +14,22 @@
 
 <body>
   <main>
-    <img src="Images/vader.jpg" alt="Vader wants YOU for The Empire">
+    <img src="Images/vader.jpg" alt="Vader wants you for the empire">
 
     <form action="submit" method="get" id="survey-form">
       <div class="form-icon-div"><a href="http://starwars.wikia.com/wiki/Galactic_Empire" title="Galactic Empire Wiki" class="empire-wiki" target="_blank"><i class="fa fa-empire fa-5x form-icon" aria-hidden="true"></i></a></div>
-      <p id="description" class="form-title">Please fill out the from below to receive more information about the Galactic Empire.</p>
+      <p id="description" class="form-title">Please fill out the form below to receive more information about The Empire.</p>
 
-      <label for="name" id="name-label">*Name:</label>
+      <label for="name" id="name-label" class="bold">*Name:</label>
       <input id="name" type="text" placeholder="Enter your full name" required>
 
-      <label for="email" id="email-label">*E-Mail:</label>
+      <label for="email" id="email-label" class="bold">*E-Mail:</label>
       <input id="email" type="email" placeholder="Enter your primary email address" required>
 
-      <label for="number" id="number-label">*Age:</label>
+      <label for="number" id="number-label" class="bold">*Age:</label>
       <input id="number" type="number" min="1" max="1000" placeholder="100" required>
 
-      <label for="dropdown" id="dropdown-label">Species:</label>
+      <label for="dropdown" id="dropdown-label" class="bold">Species:</label>
       <select id="dropdown" name="dropdown">
         <option>Human</option>
         <option>Rodian</option>
@@ -39,7 +39,7 @@
       </select>
 
       <fieldset class="lightsaber">
-        <legend class="radio-legend">Lightsaber Color</legend>
+        <legend class="radio-legend bold">Lightsaber Color</legend>
         <input type="radio" id="radio1" class="radio" name="radio" value="saber-color">
         <label for="radio1" id="radio-option1" class="radio-label">Red</label>
 
@@ -51,7 +51,7 @@
       </fieldset>
 
       <fieldset class="dark">
-        <legend class="checkbox-legend">How Dark Are You</legend>
+        <legend class="checkbox-legend bold">How Dark Are You</legend>
         <input type="checkbox" id="checkbox1" name="checkbox" value="dark" class="checkbox">
         <label for="checkbox1" class="checkbox-label" id="check-option1">Dark</label>
 
@@ -62,7 +62,7 @@
         <label for="checkbox3" class="checkbox-label" id="check-option3">Kinda Dark</label>
       </fieldset>
 
-      <label for="textarea" id="textarea-label">Comments:</label>
+      <label for="textarea" id="textarea-label" class="bold">Comments:</label>
       <textarea id="textarea" rows="10" cols="20" placeholder="Comments, questions, concerns..."></textarea>
 
       <button id="submit">Submit</button>
@@ -73,7 +73,7 @@
     <div class="my-links">
       <a href="https://github.com/slamoureux/survey-form" target="_blank" class="footer-link">
       <i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-      <a href="https://codepen.io/s-lamoureux/pen/zpMqNM" target="_blank" class="footer-link">
+      <a href="https://codepen.io/s-lamoureux/full/zpMqNM/" target="_blank" class="footer-link">
       <i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
       <a href="https://twitter.com/sa_lamoureux" target="_blank" class="footer-link">
       <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
