@@ -90,8 +90,14 @@ label {
   padding-bottom: 5px;
 }
 
-.empire-wiki {
+.empire-wiki:link, .empire-wiki:active, .empire-wiki:visited {
   text-decoration: none;
+  color: #FF3333;
+}
+
+.empire-wiki:hover {
+  color: #ff3333;
+  text-decoration: underline;
 }
 
 p {
