@@ -1,10 +1,6 @@
-/*                    TODO
-- Fix for mobile responsiveness.
-*/
-
 body {
   background-color: black;
-  font-family: sans;
+  font-family: sans-serif;
   margin-bottom: 30px;
 }
 
@@ -17,7 +13,7 @@ h1 {
 
 img {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 75%;
   display: block;
 }
 
@@ -92,7 +88,7 @@ label {
 
 .empire-wiki:link, .empire-wiki:active, .empire-wiki:visited {
   text-decoration: none;
-  color: #FF3333;
+  color: #ff3333;
 }
 
 .empire-wiki:hover {
@@ -119,6 +115,7 @@ p {
 
 .radio-legend {
   text-align: left;
+  padding: 0 5px;
 }
 
 .lightsaber {
@@ -139,6 +136,7 @@ p {
 
 .checkbox-legend {
   text-align: left;
+  padding: 0 5px;
 }
 
 .dark {
@@ -228,85 +226,11 @@ form button:hover {
 
 /* Mobile Responsive */
 
-@media only screen and (max-width: 768px) {
-  img {
-    max-width: 600px;
-  }
-}
+/* Small Mobile */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 374px) {
   img {
     max-width: 75%;
-  }
-  form {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-  }
-  input, textarea {
-    grid-column: 1 / 2;
-    width: 92%;
-  }
-  select {
-    grid-column: 1 / 2;
-    width: 100%;
-  }
-  .radio-legend {
-    text-align: center;
-  }
-  .checkbox-legend {
-    text-align: center;
-  }
-  .lightsaber {
-    display: inline;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .dark {
-    grid-column: 1 / 2;
-    margin: 0 auto;
-    text-align: center;
-  }
-  button {
-    width: 100%;
-  }
-  .radio {
-    width: auto;
-  }
-  .checkbox {
-    width: auto;
-  }
-  label {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    grid-column: 1 / 2;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  img {
-    max-width: 75%;
-  }
-  form {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-  }
-  input {
-    grid-column: 1 / 2;
-    width: 92%;
-  }
-  textarea {
-    grid-column: 1 / 2;
-    width: 92%;
-  }
-  select {
-    grid-column: 1 / 2;
-    width: 100%;
-  }
-  fieldset {
-    grid-column: 1 / 2;
   }
   form label {
     text-align: left;
@@ -314,7 +238,217 @@ form button:hover {
     padding-left: 0;
     margin-bottom: 5px;
   }
-  button {
+  input {
+    grid-column: 1 / 3;
+    width: 92%;
+  }
+  textarea {
+    grid-column: 1 / 3;
+    width: 94%;
+  }
+  select {
+    grid-column: 1 / 3;
     width: 100%;
+    margin-bottom: 20px;
+  }
+  fieldset {
+    grid-column: 1 / 3;
+  }
+  .margin {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  /* Radios */
+  .radio-legend {
+    text-align: center;
+  }
+  .radio {
+    width: auto;
+    float: left;
+    margin-left: 6%;
+  }
+  .radio-label {
+    float: left;
+    margin-right: 3%;
+    padding: 0 2px 0 0;
+  }
+  .lightsaber {
+    text-align: center;
+    grid-column: 1 / 3;
+    width: 87%;
+    margin-bottom: 10px;
+  }
+  /* Checkboxes */
+  .checkbox {
+    width: auto;
+    float: left;
+    margin-left: 6%;
+  }
+  .checkbox-legend {
+    text-align: center;
+  }
+  .checkbox-label {
+    float: left;
+    margin-right: 6%;
+    padding: 0 2px 0 0;
+  }
+  .dark {
+    text-align: center;
+    width: 87%;
+    grid-column: 1 / 3;
+  }
+}
+
+/* Medium Mobile */
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  img {
+    max-width: 75%;
+  }
+  form label {
+    text-align: left;
+    grid-column: 1 / 2;
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
+  input {
+    grid-column: 1 / 3;
+    width: 92%;
+  }
+  textarea {
+    grid-column: 1 / 3;
+    width: 94%;
+  }
+  select {
+    grid-column: 1 / 3;
+    width: 98.5%;
+    margin-bottom: 20px;
+  }
+  fieldset {
+    grid-column: 1 / 3;
+  }
+  .margin {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  /* Radios */
+  .radio-legend {
+    text-align: center;
+  }
+  .radio {
+    width: auto;
+    float: left;
+    margin-left: 9%;
+  }
+  .radio-label {
+    float: left;
+    margin-right: 3%;
+    padding: 0 2px 0 0;
+  }
+  .lightsaber {
+    text-align: center;
+    grid-column: 1 / 3;
+    width: 87%;
+    margin-bottom: 20px;
+  }
+  /* Checkboxes */
+  .checkbox {
+    width: auto;
+    float: left;
+    margin-left: 11%;
+  }
+  .checkbox-legend {
+    text-align: center;
+  }
+  .checkbox-label {
+    float: left;
+    margin-right: 6%;
+    padding: 0 2px 0 0;
+  }
+  .dark {
+    text-align: center;
+    width: 87%;
+    grid-column: 1 / 3;
+  }
+}
+
+/* Large Mobile */
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  img {
+    max-width: 75%;
+  }
+  form label {
+    text-align: left;
+    grid-column: 1 / 2;
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
+  input {
+    grid-column: 1 / 3;
+    width: 92%;
+  }
+  textarea {
+    grid-column: 1 / 3;
+    width: 94%;
+  }
+  select {
+    grid-column: 1 / 3;
+    width: 97.5%;
+    margin-bottom: 20px;
+  }
+  fieldset {
+    grid-column: 1 / 3;
+  }
+  .margin {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  /* Radios */
+  .radio-legend {
+    text-align: center;
+  }
+  .radio {
+    width: auto;
+    float: left;
+    margin-left: 10%;
+  }
+  .radio-label {
+    float: left;
+    margin-right: 5%;
+    padding: 0 2px 0 0;
+  }
+  .lightsaber {
+    text-align: center;
+    grid-column: 1 / 3;
+    width: 88%;
+    margin-bottom: 20px;
+  }
+  /* Checkboxes */
+  .checkbox {
+    width: auto;
+    float: left;
+    margin-left: 2.7%;
+  }
+  .checkbox-legend {
+    text-align: center;
+  }
+  .checkbox-label {
+    float: left;
+    margin-right: 2%;
+    padding: 0 2px 0 0;
+  }
+  .dark {
+    text-align: center;
+    width: 88%;
+    grid-column: 1 / 3;
+  }
+}
+
+/* Tablets */
+
+@media only screen and (max-width: 768px) {
+  img {
+    max-width: 75%;
   }
 }
