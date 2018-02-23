@@ -240,7 +240,7 @@ form button:hover {
   }
   input {
     grid-column: 1 / 3;
-    width: 92%;
+    width: 91%;
   }
   textarea {
     grid-column: 1 / 3;
@@ -248,7 +248,7 @@ form button:hover {
   }
   select {
     grid-column: 1 / 3;
-    width: 100%;
+    width: 99%;
     margin-bottom: 20px;
   }
   fieldset {
@@ -275,27 +275,30 @@ form button:hover {
   .lightsaber {
     text-align: center;
     grid-column: 1 / 3;
-    width: 87%;
+    width: 85%;
+    padding: 1em;
     margin-bottom: 10px;
   }
   /* Checkboxes */
   .checkbox {
-    width: auto;
     float: left;
-    margin-left: 6%;
+    margin-left: 0;
+    width: 15px;
   }
   .checkbox-legend {
     text-align: center;
   }
   .checkbox-label {
     float: left;
-    margin-right: 6%;
-    padding: 0 2px 0 0;
+    margin: 0 5px 0 0;
+    padding: 0 15px 20px 0;
   }
   .dark {
     text-align: center;
-    width: 87%;
     grid-column: 1 / 3;
+    margin-right: 0;
+    padding: 8% 0 5% 12%;
+    width: 85%;
   }
 }
 
@@ -317,7 +320,7 @@ form button:hover {
   }
   textarea {
     grid-column: 1 / 3;
-    width: 94%;
+    width: 95%;
   }
   select {
     grid-column: 1 / 3;
@@ -353,22 +356,24 @@ form button:hover {
   }
   /* Checkboxes */
   .checkbox {
-    width: auto;
     float: left;
-    margin-left: 11%;
+    margin-left: 12%;
+    width: 15px;
   }
   .checkbox-legend {
     text-align: center;
   }
   .checkbox-label {
     float: left;
-    margin-right: 6%;
-    padding: 0 2px 0 0;
+    padding-bottom: 20px;
+    padding-right: 0;
+    margin-right: 0;
   }
   .dark {
     text-align: center;
-    width: 87%;
     grid-column: 1 / 3;
+    width: 87%;
+    padding-bottom: 0;
   }
 }
 
@@ -390,7 +395,7 @@ form button:hover {
   }
   textarea {
     grid-column: 1 / 3;
-    width: 94%;
+    width: 96%;
   }
   select {
     grid-column: 1 / 3;
