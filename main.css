@@ -395,7 +395,7 @@ form button:hover {
   }
   textarea {
     grid-column: 1 / 3;
-    width: 96%;
+    width: 95.5%;
   }
   select {
     grid-column: 1 / 3;
