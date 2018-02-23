@@ -194,7 +194,7 @@ form button {
 }
 
 form button:hover {
-  outline: 1px solid #ff3333;
+  outline: 2px solid #ff3333;
   color: #ff3333;
 }
 
