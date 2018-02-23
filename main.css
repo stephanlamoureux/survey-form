@@ -48,7 +48,7 @@ input, select {
 }
 
 input:focus, textarea:focus, select:focus {
-  outline: 3px solid black;
+  outline: 2px solid #ff3333;
 }
 
 input, button, fieldset, select, textarea {
