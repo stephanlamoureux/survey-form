@@ -13,7 +13,7 @@ h1 {
 
 img {
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 55%;
   display: block;
 }
 
@@ -229,14 +229,10 @@ form button:hover {
 /* Small Mobile */
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  img {
-    max-width: 75%;
-  }
   form label {
     text-align: left;
     grid-column: 1 / 2;
     padding-left: 0;
-    margin-bottom: 5px;
   }
   input {
     grid-column: 1 / 3;
@@ -245,6 +241,7 @@ form button:hover {
   textarea {
     grid-column: 1 / 3;
     width: 93%;
+    margin-top: 0;
   }
   select {
     grid-column: 1 / 3;
@@ -302,9 +299,6 @@ form button:hover {
 /* Medium Mobile */
 
 @media only screen and (min-width: 375px) and (max-width: 424px) {
-  img {
-    max-width: 75%;
-  }
   form label {
     text-align: left;
     grid-column: 1 / 2;
@@ -374,9 +368,6 @@ form button:hover {
 /* Large Mobile */
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-  img {
-    max-width: 75%;
-  }
   form label {
     text-align: left;
     grid-column: 1 / 2;
@@ -438,13 +429,5 @@ form button:hover {
     text-align: center;
     width: 88%;
     grid-column: 1 / 3;
-  }
-}
-
-/* Tablets */
-
-@media only screen and (max-width: 768px) {
-  img {
-    max-width: 75%;
   }
 }
