@@ -1,3 +1,5 @@
+/* Global Styling */
+
 body {
   background-color: black;
   font-family: sans-serif;
@@ -22,6 +24,7 @@ img {
 }
 
 /* Header */
+
 .header {
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1369185/vader.jpg");
   background-size: contain;
