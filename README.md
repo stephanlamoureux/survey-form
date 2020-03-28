@@ -1,4 +1,4 @@
-# Applied Responsive Web Design Projects: Build a Survey Form
+# Responsive Web Design Projects: Build a Survey Form
 
 Fulfill the user stories by getting all of the tests to pass. Use whichever libraries you need. Give it your own personal style.
 
