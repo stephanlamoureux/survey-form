@@ -228,7 +228,7 @@ footer a:active {
 }
 
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #ff3333;
 }
 
