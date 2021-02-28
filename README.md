@@ -30,4 +30,4 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
  16. Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
 
 ### Completed Project
-https://slamoureux.github.io/survey-form/
+https://stephanlamoureux.github.io/survey-form/
